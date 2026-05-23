@@ -92,3 +92,17 @@ Charts will be saved to the `outputs/` folder.
 ## 📄 License
 
 MIT
+
+## 📊 Sample Charts
+
+### Monthly Revenue
+![Monthly Revenue](outputs/monthly_revenue.png)
+
+### Category Breakdown
+![Category Breakdown](outputs/category_breakdown.png)
+
+### Region × Category Heatmap
+![Heatmap](outputs/region_category_heatmap.png)
+
+### Discount Impact
+![Discount Impact](outputs/discount_impact.png)
