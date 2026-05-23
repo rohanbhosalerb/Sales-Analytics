@@ -1,39 +1,63 @@
-# 📊 Sales Data Analyzer
+# 📊 Superstore Sales Analysis (2015–2018)
 
-A Python data analytics project that performs exploratory data analysis (EDA) on a retail sales dataset — including data cleaning, summary statistics, and four insightful visualizations.
+An end-to-end exploratory data analysis (EDA) project on a real US retail dataset — covering data cleaning, feature engineering, and five business-focused visualisations using Python.
 
-## 🔍 What It Does
+---
 
-- **Loads & inspects** a CSV sales dataset
-- **Cleans** missing values and engineers new features (month, quarter)
-- **Prints** key metrics: total revenue, average order value, top category, regional breakdown
-- **Generates 4 charts** saved to `outputs/`:
-  | Chart | Description |
-  |---|---|
-  | `monthly_revenue.png` | Revenue trend across all 12 months |
-  | `category_breakdown.png` | Bar + pie chart of revenue per category |
-  | `region_category_heatmap.png` | Heatmap of revenue by region & category |
-  | `discount_impact.png` | How discounts affect revenue & order volume |
+## 📁 Repository Contents
 
-## 📁 Project Structure
+| File | Description |
+|---|---|
+| `Superstore_Sales_Analysis.ipynb` | Main analysis notebook |
+| `sales_data.csv` | Superstore Sales Dataset (source: Kaggle) |
+| `monthly_revenue.png` | Monthly revenue trend + YoY comparison |
+| `category_breakdown.png` | Category & sub-category revenue breakdown |
+| `region_category_heatmap.png` | Heatmap of revenue by region & category |
+| `segment_analysis.png` | Customer segment: revenue, orders, avg order value |
+| `top_states.png` | Top 10 US states by total revenue |
+| `requirements.txt` | Python dependencies |
 
-```
-sales-data-analyzer/
-├── data/
-│   └── sales_data.csv        # Generated dataset (1,000 orders)
-├── outputs/                  # Charts are saved here
-├── generate_data.py          # Creates the sample dataset
-├── analyze.py                # Main analysis script
-├── requirements.txt
-└── README.md
-```
+---
+
+## 🔍 What the Analysis Covers
+
+- **Dataset:** 9,800 real retail orders across 4 years (2015–2018)
+- **Data Cleaning:** Missing value handling, date parsing, feature engineering (Year, Month, Quarter, Days to Ship)
+- **Key Metrics:** Total revenue, avg order value, top category, top state, top segment
+- **Visualisations:**
+  - Monthly revenue trend — all years overlaid + year-over-year bar chart
+  - Category & top-10 sub-category revenue breakdown (pie + bar)
+  - Region × Category revenue heatmap
+  - Customer segment analysis (revenue, order count, avg order value)
+  - Top 10 US states by revenue
+
+---
+
+## 📈 Sample Charts
+
+### Monthly Revenue & Year-over-Year Growth
+![Monthly Revenue](monthly_revenue.png)
+
+### Category & Sub-Category Breakdown
+![Category Breakdown](category_breakdown.png)
+
+### Region × Category Heatmap
+![Heatmap](region_category_heatmap.png)
+
+### Customer Segment Analysis
+![Segment Analysis](segment_analysis.png)
+
+### Top 10 States by Revenue
+![Top States](top_states.png)
+
+---
 
 ## 🚀 Getting Started
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/sales-data-analyzer.git
-cd sales-data-analyzer
+git clone https://github.com/rohanbhosalerb/Sales-Analytics.git
+cd Sales-Analytics
 ```
 
 ### 2. Install dependencies
@@ -41,68 +65,46 @@ cd sales-data-analyzer
 pip install -r requirements.txt
 ```
 
-### 3. Generate the dataset
+### 3. Open the notebook
 ```bash
-python generate_data.py
+jupyter notebook Superstore_Sales_Analysis.ipynb
 ```
 
-### 4. Run the analysis
-```bash
-python analyze.py
-```
-
-Charts will be saved to the `outputs/` folder.
-
-## 📈 Sample Output
-
-```
-=======================================================
-📦  DATASET OVERVIEW
-=======================================================
-  Rows      : 1,000
-  Columns   : 9
-  Date range: 2023-01-01 → 2023-12-31
-
-🧹  Cleaned: dropped 38 incomplete rows → 962 remaining
-
-=======================================================
-📊  KEY METRICS
-=======================================================
-  Total Revenue   : $XXX,XXX.XX
-  Avg Order Value : $XXX.XX
-  Top Category    : Electronics
-  ...
-```
+---
 
 ## 🛠️ Tech Stack
 
-- **Python 3.8+**
-- **pandas** — data loading, cleaning, aggregation
-- **NumPy** — numerical operations
-- **Matplotlib** — charting
-- **Seaborn** — styled statistical visualizations
+| Tool | Purpose |
+|---|---|
+| **Python 3.8+** | Core language |
+| **Pandas** | Data loading, cleaning, aggregation |
+| **NumPy** | Numerical operations |
+| **Matplotlib** | Chart generation |
+| **Seaborn** | Statistical visualisations |
+| **Jupyter Notebook** | Interactive analysis environment |
 
-## 💡 Ideas to Extend
+---
 
-- Add a Jupyter notebook with interactive charts
-- Swap in a real dataset (e.g. from Kaggle)
-- Build a Streamlit dashboard for live filtering
-- Add unit tests with `pytest`
+## 💡 Key Insights
+
+- **Technology** is the top-revenue category across all 4 years
+- **West region** leads in total sales; California is the #1 state
+- **Q4 seasonality** is strong — consistently the highest-revenue quarter each year
+- **Consumer segment** drives the most orders; **Corporate** has a higher average order value
+- Revenue grew year-on-year from 2015 to 2018
+
+---
+
+## 📦 Dataset Source
+
+**Superstore Sales Dataset** — available on [Kaggle](https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting)
+
+---
 
 ## 📄 License
 
 MIT
 
-## 📊 Sample Charts
+---
 
-### Monthly Revenue
-![Monthly Revenue](monthly_revenue.png)
-
-### Category Breakdown
-![Category Breakdown](category_breakdown.png)
-
-### Region × Category Heatmap
-![Heatmap](region_category_heatmap.png)
-
-### Discount Impact
-![Discount Impact](discount_impact.png)
+*Part of my data analytics portfolio — [linkedin.com/in/bhosale-rohan](https://linkedin.com/in/bhosale-rohan)*
