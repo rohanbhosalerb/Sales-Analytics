@@ -96,13 +96,13 @@ MIT
 ## 📊 Sample Charts
 
 ### Monthly Revenue
-![Monthly Revenue](outputs/monthly_revenue.png)
+![Monthly Revenue](monthly_revenue.png)
 
 ### Category Breakdown
-![Category Breakdown](outputs/category_breakdown.png)
+![Category Breakdown](category_breakdown.png)
 
 ### Region × Category Heatmap
-![Heatmap](outputs/region_category_heatmap.png)
+![Heatmap](region_category_heatmap.png)
 
 ### Discount Impact
-![Discount Impact](outputs/discount_impact.png)
+![Discount Impact](discount_impact.png)
