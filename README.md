@@ -101,10 +101,4 @@ jupyter notebook Superstore_Sales_Analysis.ipynb
 
 ---
 
-## 📄 License
-
-MIT
-
----
-
 *Part of my data analytics portfolio — [linkedin.com/in/bhosale-rohan](https://linkedin.com/in/bhosale-rohan)*
